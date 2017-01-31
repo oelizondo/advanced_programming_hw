@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  app:
+    image: frolvlad/alpine-gcc
+    working_dir: /usr/app
+    volumes:
+      - .:/usr/app
+    stdin_open: true
+    tty: true
+    command: sh
